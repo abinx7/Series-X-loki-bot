@@ -423,7 +423,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         try:
             msg = await client.send_cached_media(
-                chat_id=AUTH_CHANNEL,
+                chat_id=REDIRECT_TO,
                 file_id=file_id,
                 caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n⚠️ This Message Will Be Auto-Deleted In Next 5 Minutes T𝘰 Avoid Copyright Issues.So Forward This File To Anywhere Else Before Downloading..!!!</i>\n\n<b>╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╗\n⚠️ 𝙅𝙊𝙄𝙉 :- @SeriesxOfficial\n♻️ 𝙅𝙊𝙄𝙉 :- @Seriezx2\n╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╝</b>',
                 protect_content=True if ident == "filep" else False 
@@ -495,8 +495,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('💠 Channel', url='https://t.me/FilmClub_Channel'),
-        InlineKeyboardButton('♻️ Group', url ='https://t.me/FilmClubGroup')
+        InlineKeyboardButton('💠 Channel', url='https://t.me/SeriesXOfficial'),
+        InlineKeyboardButton('♻️ Group', url ='https://t.me/SeriesLandChat')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
