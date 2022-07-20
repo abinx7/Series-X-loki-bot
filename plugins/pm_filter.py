@@ -66,7 +66,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f"⍣ [{get_size(file.file_size)}]▹ {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 )
             ] 
             for file in files
@@ -87,12 +87,12 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
+            InlineKeyboardButton(f'🔰 {search} 🔰', 'reqst11')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'📁 Files: {len(files)}', 'reqst11'),
             InlineKeyboardButton(f'‼️ Tips', 'tips')
         ]
     )
@@ -432,7 +432,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 msg = await client.send_cached_media(
                 chat_id=REDIRECT_TO,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n⚠️ This Message Will Be Auto-Deleted In Next 5 Minutes T𝘰 Avoid Copyright Issues.So Forward This File To Anywhere Else Before Downloading..!!!</i>\n\n<b>╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╗\n⚠️ 𝙅𝙊𝙄𝙉 :- @SeriesxOfficial\n♻️ 𝙅𝙊𝙄𝙉 :- @Seriezx2\n╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╝</b>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n⚠️ This Message Will Be Auto-Deleted In Next 5 Minutes T𝘰 Avoid Copyright Issues.So Forward This File To Anywhere Else Before Downloading..!!!</i>\n\n<b>╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╗\n⚠️ 𝙅𝙊𝙄𝙉 :- @MoviesHubGroup2\n♻️ 𝙅𝙊𝙄𝙉 :- @MoviesHub_Updates\n╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═════╝</b>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
@@ -447,7 +447,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton('📥 Download 📥 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton("⚠️ Can't Access ❓ Click Here ⚠️", url=f'https://t.me/+dpa25Yc4ZIk5YWY9')
+                            InlineKeyboardButton("⚠️ Can't Access ❓ Click Here ⚠️", url=f'https://t.me/MoviesHub_Updates')
                         ]
                     ]
                 )
@@ -502,8 +502,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('💠 Channel', url='https://t.me/SeriesXOfficial'),
-        InlineKeyboardButton('♻️ Group', url ='https://t.me/SeriesLandChat')
+        InlineKeyboardButton('💠 Channel', url='https://t.me/MoviesHub_Updates'),
+        InlineKeyboardButton('♻️ Group', url ='https://t.me/MoviesHubGroup2')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
@@ -1037,7 +1037,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                        text=f"📂 [{get_size(file.file_size)}] {file.file_name}", 
+                        text=f"⍣ [{get_size(file.file_size)}]▹ {file.file_name}", 
                         callback_data=f'{pre}#{file.file_id}#{msg.from_user.id if msg.from_user is not None else 0}'
                 )
             ] 
@@ -1060,12 +1060,12 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
+            InlineKeyboardButton(f'🔰 {search} 🔰', 'reqst11')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📁 Files: {total_results}', 'dupe'),
+            InlineKeyboardButton(f'📁 Files: {total_results}', 'reqst11'),
             InlineKeyboardButton(f'‼️ Tips', 'tips')
         ]
     )
