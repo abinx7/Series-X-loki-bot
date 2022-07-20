@@ -25,7 +25,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('⚠️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅', url='https://t.me/SeriesXOfficial')
+                InlineKeyboardButton('⚠️ 𝖢𝗁𝖺𝗇𝗇𝖾𝗅', url='https://t.me/MoviesHub_Updates')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,8 +44,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🚸 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/SeriesLandChat'),
-            InlineKeyboardButton('𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ⚠️', url='https://t.me/SeriesXOfficial')
+            InlineKeyboardButton('🚸 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/MoviesHubGroup2'),
+            InlineKeyboardButton('𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ⚠️', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -85,8 +85,8 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🚸 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/SeriesLandChat'),
-            InlineKeyboardButton('𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ⚠️', url='https://t.me/SeriesXOfficial')
+            InlineKeyboardButton('🚸 𝖦𝗋𝗈𝗎𝗉', url='https://t.me/MoviesHubGroup2'),
+            InlineKeyboardButton('𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ⚠️', url='https://t.me/MoviesHub_Updates')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
