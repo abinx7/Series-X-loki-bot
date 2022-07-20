@@ -26,7 +26,7 @@ class script(object):
     ABOUT_TXT = """
 𝐌𝐲 𝐍𝐚𝐦𝐞 : {} 🐍
 
-🦁 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : <a href=https://t.me/FilmClub_Channel>𝐅𝐈𝐋𝐌 𝐂𝐋𝐔𝐁 𝐓𝐄𝐀𝐌</a>🍷
+🦁 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : <a href=</a>🍷
 
 🐍𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : 𝐏𝐲𝐭𝐡𝐨𝐧
 
@@ -41,11 +41,11 @@ class script(object):
 """
     SOURCE_TXT = """<b>DISCLAIMER NOTE‼️:</b>
     
-<b>- @FilmClub_Channel is an Open Source Project.</b> <code>All the files in this bot are freely available on the internet or posted by somebody else. This bot is indexing files which are already uploaded on Telegram for easy of searching, We respect all the copyright laws and works in compliance with DMCA and EUCD. If anything is against law please contact us so that it can be removed asap. It is forbidden to download, stream, reproduce, or by any means, share, or consume, content without explicit permission from the content creator or legal copyright holder. If you believe this bot is violating your intellectual property, contact the respective channels for removal. The Bot does not own any of these contents, it only index the files from telegram. </code>
+<b>-  is an Open Source Project.</b> <code>All the files in this bot are freely available on the internet or posted by somebody else. This bot is indexing files which are already uploaded on Telegram for easy of searching, We respect all the copyright laws and works in compliance with DMCA and EUCD. If anything is against law please contact us so that it can be removed asap. It is forbidden to download, stream, reproduce, or by any means, share, or consume, content without explicit permission from the content creator or legal copyright holder. If you believe this bot is violating your intellectual property, contact the respective channels for removal. The Bot does not own any of these contents, it only index the files from telegram. </code>
 - <b>Source - @FilmClubGroup </b>
 
 <b>𝐃𝐄𝐕𝐒:</b>
-- <a href=https://t.me/FilmClub_Channel>Team Film Club</a>  
+- <a href=Club</a>  
 """
     TTS_TXT = """<b>TEXT TO SPEACH</b>
 Simple Telegram Text-To-Speech Module.
